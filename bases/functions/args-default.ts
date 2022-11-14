@@ -13,7 +13,7 @@
 
     }
 
-    const name = fullName( 'Tony', true );
+    const name = fullName( 'Tony' );
 
     console.log( {name} );
 
