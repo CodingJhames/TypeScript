@@ -103,7 +103,7 @@
   "exclude": [
     "node_modules2"
   ],
-//   "include": [
-//     "node_modules"
-//   ]
+  "include": [
+    "classes"
+  ]
 }
