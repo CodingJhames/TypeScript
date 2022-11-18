@@ -1,5 +1,10 @@
+(()=>{
+
+    const message: string = "Hello Micho";
+
+    console.log(message);
 
 
-const message: string = "Hello Micho";
+})()
 
-console.log(message);
+
