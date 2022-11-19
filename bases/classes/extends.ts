@@ -23,15 +23,26 @@
             console.log('constructor xmen llamado');
         }
 
+        get fullName(){
+            return `${this.name} - ${this.realName}`
+        }
+
+        set fullName( name:string ){
+            this.name = name;
+
+        }
+
         getFullNameDesdeXmen(){
             console.log( super.getFullName() );
         }
     }
 
     const wolverine = new Xmen('Wolverine','Logan', true );
-    console.log( wolverine );
-    wolverine.getFullNameDesdeXmen();
-    const newAvenger = new Avenger('hola','mundo');
+    // console.log( wolverine.fullName );
+    wolverine.fullName = 'James';
+    console.log( wolverine.fullName );
+    // wolverine.getFullNameDesdeXmen();
+    // const newAvenger = new Avenger('hola','mundo');
     
 
 })()
