@@ -18,9 +18,9 @@
             }
     }
 
-    const antman: Avenger = new Avenger('Antman', 'Captain', 'Scott lang');
-    console.log( antman.bio() );
+    // const antman: Avenger = new Avenger('Antman', 'Captain', 'Scott lang');
+    // console.log( antman.bio() );
 
-    console.log( Avenger.avgAge );
-    console.log( Avenger.getAvgAge() );
+    // console.log( Avenger.avgAge );
+    // console.log( Avenger.getAvgAge() );
 })()
