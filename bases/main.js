@@ -65,4 +65,24 @@
         }
     }
 })();
+(() => {
+    class Chepe {
+        constructor(name) {
+            this.name = name;
+        }
+        static callChepe() {
+            if (!Chepe.instance) {
+                Chepe.instance = new Chepe('i am chepito the only one');
+            }
+            return Chepe.instance;
+        }
+        changeName(newName) {
+            this.name = newName;
+        }
+    }
+    const chepeOne = Chepe.callChepe();
+    chepeOne.changeName('Parchita');
+    const chepito = Chepe.callChepe();
+    console.log(chepito);
+})();
 //# sourceMappingURL=main.js.map
