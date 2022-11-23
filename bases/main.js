@@ -14,4 +14,30 @@
         }
     };
 })();
+(() => {
+    const client = {
+        name: 'james',
+        age: 29,
+        address: {
+            id: 125,
+            zip: '00057',
+            city: 'Cúcuta'
+        },
+        getFullAddress(id) {
+            return this.address.city;
+        }
+    };
+    const cliente = {
+        name: 'Parchita',
+        age: 3,
+        address: {
+            id: 236,
+            zip: '00057',
+            city: 'Cúcuta'
+        },
+        getFullAddress(id) {
+            return this.address.city;
+        }
+    };
+})();
 //# sourceMappingURL=main.js.map

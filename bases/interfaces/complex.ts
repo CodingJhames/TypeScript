@@ -1,10 +1,13 @@
 
+//  las interfaces no sirven para crear instancias
+
 (()=> {
 
     interface Client {
         name: string;
         age?: number;
         address: Address;
+        getFullAddress( id:string ): string;
     }
 
     interface Address {
@@ -20,6 +23,9 @@
             id: 125,
             zip: '00057',
             city: 'Cúcuta'
+        },
+        getFullAddress( id:string ){
+            return this.address.city;
         }
     }
 
@@ -30,6 +36,9 @@
             id: 236,
             zip: '00057',
             city: 'Cúcuta'
+        },
+        getFullAddress( id:string ){
+            return this.address.city;
         }
     }
 
