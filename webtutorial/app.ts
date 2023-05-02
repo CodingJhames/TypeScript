@@ -22,3 +22,12 @@ function increment(counter:number): number {
 document.addEventListener('click', function(event){
     console.log( event.button );
 } )
+
+//  Number
+
+let price: number; 
+
+let counter_2: number = 0;
+let x: number = 100,
+    y: number = 200;
+
