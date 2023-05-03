@@ -31,3 +31,16 @@ let counter_2: number = 0;
 let x: number = 100,
     y: number = 200;
 
+// Objects
+
+let employee: object;
+
+employee = {
+    firstName: 'John',
+    lastName: 'Doe',
+    age: 25,
+    jobTitle: 'Web Developer'
+};
+
+console.log( employee );
+
