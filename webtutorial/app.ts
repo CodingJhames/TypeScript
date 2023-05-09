@@ -44,3 +44,11 @@ employee = {
 
 console.log( employee );
 
+// tuples, like in python values can't be changed once are set
+
+let skill: [string, number];
+skill = ['Programming', 5];
+
+let color: [number, number, number ] = [255, 0, 2];
+
+
