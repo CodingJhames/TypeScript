@@ -97,7 +97,51 @@ interface CharacterOrigin {
 };
 
 
+type DNI = string;
+const dni: DNI = '12341234';
 
+const tellMeMyDni = ( dni:DNI ) => {
+    console.log(dni);
+}
 
+interface Personita {
+    nombre: string;
+    edad: number;
+}
 
+interface Abogado extends Personita {
+    legajo: string;
+}
 
+const personita: Personita = {
+    nombre: 'Alan',
+    edad: 28,
+};
+
+const abogadito: Abogado = {
+    nombre: 'James',
+    edad: 28,
+    legajo: '123'
+};
+
+interface Interface1 {
+    prop1: string;
+}
+
+interface Interface2 {
+    prop2: number;
+}
+
+type InterfaceMixUnion = Interface1 | Interface2;
+
+const mixUnion: InterfaceMixUnion = {
+    prop1: '1',
+    prop2: 2,
+}
+
+type InterfaceMixIntersection = Interface1 & Interface2;
+
+const mixIntersection: InterfaceMixIntersection = {
+    prop1: '1',
+    prop2: 2,
+}
